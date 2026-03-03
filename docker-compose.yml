@@ -8,7 +8,7 @@ services:
       - N8N_PROTOCOL=https
       - WEBHOOK_URL=https://sadasdatad.onrender.com/
       - GENERIC_TIMEZONE=Asia/Kabul
-      - N8N_ENCRYPTION_KEY=mysecretkey123456789012345678901234
+      - N8N_ENCRYPTION_KEY=b6185bf2d7ab787c18028261a24e79beb5f5867553ab1cf7bacc1d74adea8756
     volumes:
       - n8n_data:/home/node/.n8n
 
