@@ -1,0 +1,16 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=sadasdatad.onrender.com
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://sadasdatad.onrender.com/
+      - GENERIC_TIMEZONE=Asia/Kabul
+      - N8N_ENCRYPTION_KEY=mysecretkey123456789012345678901234
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:
